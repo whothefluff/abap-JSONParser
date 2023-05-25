@@ -73,8 +73,8 @@ class zcl_json_parser implementation.
           cx_sy_conversion_codepage
           cx_parameter_invalid_type into data(conversion_to_binary_error).
 
-      raise exception type zcx_json_parser exporting i_previous = conversion_to_binary_error
-                                                     i_t100_message = new zcl_text_symbol_msg( 'JSON string could not be converted to binary'(001) ).
+      raise exception new zcx_json_parser( i_previous = conversion_to_binary_error
+                                           i_t100_message = new zcl_text_symbol_msg( 'JSON string could not be converted to binary'(001) ) ).
 
     endtry.
 
@@ -109,8 +109,8 @@ class zcl_json_parser implementation.
           cx_sy_data_access_error
           cx_sy_move_cast_error into data(conversion_error).
 
-      raise exception type zcx_json_parser exporting i_previous = conversion_error
-                                                     i_t100_message = new zcl_text_symbol_msg( 'Error during conversion to ABAP'(003) ).
+      raise exception new zcx_json_parser( i_previous = conversion_error
+                                           i_t100_message = new zcl_text_symbol_msg( 'Error during conversion to ABAP'(003) ) ).
 
     endtry.
 

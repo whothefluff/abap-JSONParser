@@ -68,13 +68,11 @@ class top_object_name_factory implementation.
 
   method from.
 
-    constants top_object type string value '"([^"]*)"'.
+    constants object_name type string value `(?<=")[^"]*(?=")`.
 
-    r_top_object_name = new #( to_upper( conv string( let offset = conv i( find( val = i_json_string
-                                                                                 regex = top_object ) + 1 )
-                                                          length = conv i( find_end( val = i_json_string
-                                                                                     regex = top_object ) - offset - 1 ) in
-                                                      i_json_string+offset(length) ) ) ).
+    r_top_object_name = new #( to_upper( match( val = i_json_string
+                                                pcre = object_name
+                                                occ = 1 ) ) ).
 
   endmethod.
 
