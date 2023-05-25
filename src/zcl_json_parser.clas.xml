@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_JSON_PARSER</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>JSON parser</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>JSON string could not be converted to binary</ENTRY>
+     <LENGTH>88</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Incorrect mapping between JSON structure and ABAP data type</ENTRY>
+     <LENGTH>118</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Error during conversion to ABAP</ENTRY>
+     <LENGTH>62</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AS_BINARY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the data as binary data compatible with sXML library</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>AS_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the data as a string</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>A_DATA_STRING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>String with JSON data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONVERT_TO_ABAP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the contents of this object as an ABAP DREF</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_BINARY</CMPNAME>
+     <SCONAME>R_BINARY_JSON_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>JSON data as a binary</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_BINARY</CMPNAME>
+     <SCONAME>ZCX_JSON_PARSER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error during conversion of string to binary</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>AS_STRING</CMPNAME>
+     <SCONAME>R_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>JSON data as a string</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>I_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>JSON data in string format</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>ZCX_JSON_PARSER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error during conversion of string to binary</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_ABAP</CMPNAME>
+     <SCONAME>I_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Model data type (used for the conversion process)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_ABAP</CMPNAME>
+     <SCONAME>R_ABAP_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Conversion result (JSON info as ABAP var)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONVERT_TO_ABAP</CMPNAME>
+     <SCONAME>ZCX_JSON_PARSER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error during conversion of raw data to ABAP type</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
